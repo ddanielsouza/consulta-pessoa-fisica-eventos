@@ -5,14 +5,11 @@ use Illuminate\Http\Request;
 use App\Models\LogConsultationScores;
 use App\Utils\Controllers\ControllerModel;
 
-/**
- * Criei a class ControllerModel que contem algumas functions basica para REST API
- */
+
 class LogConsultationScoresController extends ControllerModel
 {
     protected $modelName = LogConsultationScores::class;
     protected $basicValidate = [
-        'purchasePrice' => 'required|numeric',
         'registry' => 'required|regex:/\\d{11}/',
         'description' => 'required|string',
         'bureau' => 'required|string'

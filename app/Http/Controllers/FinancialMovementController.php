@@ -5,9 +5,6 @@ use Illuminate\Http\Request;
 use App\Models\FinancialMovement;
 use App\Utils\Controllers\ControllerModel;
 
-/**
- * Criei a class ControllerModel que contem algumas functions basica para REST API
- */
 class FinancialMovementController extends ControllerModel
 {
     protected $modelName = FinancialMovement::class;

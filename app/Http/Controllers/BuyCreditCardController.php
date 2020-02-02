@@ -5,9 +5,6 @@ use Illuminate\Http\Request;
 use App\Models\BuyCreditCard;
 use App\Utils\Controllers\ControllerModel;
 
-/**
- * Criei a class ControllerModel que contem algumas functions basica para REST API
- */
 class BuyCreditCardController extends ControllerModel
 {
     protected $modelName = BuyCreditCard::class;

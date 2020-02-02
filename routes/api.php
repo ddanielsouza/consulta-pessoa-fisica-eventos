@@ -28,4 +28,13 @@ $router->group(['prefix'=>'api'], function() use ($router){
         $router->patch('/{id}', 'FinancialMovementController@patch');
         $router->delete('/{id}', 'FinancialMovementController@delete');
     });
+
+    $router->group(['prefix'=>'log-consultation-scores'], function() use ($router){
+        $router->post('/', 'LogConsultationScoresController@save');
+        $router->get('/', 'LogConsultationScoresController@get');
+        $router->get('/{id}', 'LogConsultationScoresController@getById');
+        $router->put('/{id}', 'LogConsultationScoresController@update');
+        $router->patch('/{id}', 'LogConsultationScoresController@patch');
+        $router->delete('/{id}', 'LogConsultationScoresController@delete');
+    });
 });
